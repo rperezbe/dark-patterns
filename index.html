@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Home</title>
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>PlaylistGenerator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Home page content goes here.</p>
+  <div class="cookie-banner-container" id="cookie-banner">
+    <img src="cookie.png" alt="" class="cookie1">
+    <img src="cookie.png" alt="" class="cookie2">
+    <img src="cookie.png" alt="" class="cookie3">
+    <img src="cookie.png" alt="" class="cookie4">
+    <img src="cookie.png" alt="" class="cookie5">
+    <h3 class="title">Cookies</h3>
+    <p class="cookie-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni incidunt minima soluta iste recusandae deleniti quis, rerum pariatur voluptatibus nobis rem officia earum ratione nam aliquid, blanditiis reprehenderit ab asperiores.</p>
+    <a href="" id="enlaceActivar" class="confirm-button">I agree</a>
+    <a href="" class="second-button">Check cookie policy</a>
+</div>
+  <div id="container">
+    <img id="logo" src="logo.jpg" alt="logo">
+    <div id="login">
+      <h2>Iniciar sesión</h2>
+      <input type="text" id="username" placeholder="Nombre de usuario">
+      <input type="password" id="password" placeholder="Contraseña">
+      <button onclick="login()">Iniciar sesión</button>  
+      <p>¿No tienes una cuenta? <a href="#" onclick="showRegister()">Crear una cuenta</a></p>
+    </div>
+
+    <div id="registro" style="display: none;">
+      <h2>Registro</h2>
+      <input type="text" id="new-username" placeholder="Nombre de usuario">
+      <input type="password" id="new-password" placeholder="Contraseña">
+      <input type="text" id="email" placeholder="Correo electrónico"> <!-- Nuevo campo: Correo electrónico -->
+      <input type="text" id="age" placeholder="Edad"> <!-- Nuevo campo: Edad -->
+      <p>Preferencias musicales:</p>
+      <div class="checkbox-columns">
+        <div>
+          <label><input type="checkbox" name="musicPreferences" value="rock"> Rock</label>
+          <label><input type="checkbox" name="musicPreferences" value="pop"> Pop</label>
+          <label><input type="checkbox" name="musicPreferences" value="hip-hop"> Hip-hop</label>
+          <label><input type="checkbox" name="musicPreferences" value="metal"> Metal</label>
+          <label><input type="checkbox" name="musicPreferences" value="electronic"> Electrónica</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="musicPreferences" value="reggaeton"> Reggaeton</label>
+          <label><input type="checkbox" name="musicPreferences" value="jazz"> Jazz</label>
+          <label><input type="checkbox" name="musicPreferences" value="country"> Country</label>
+          <label><input type="checkbox" name="musicPreferences" value="indie"> Indie</label>
+          <label><input type="checkbox" name="musicPreferences" value="folk"> Folk</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="musicPreferences" value="blues"> Blues</label>
+          <label><input type="checkbox" name="musicPreferences" value="soul"> Soul</label>
+          <label><input type="checkbox" name="musicPreferences" value="funk"> Funk</label>
+          <label><input type="checkbox" name="musicPreferences" value="disco"> Disco</label>
+          <label><input type="checkbox" name="musicPreferences" value="classical"> Clásica</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="musicPreferences" value="reggae"> Reggae</label>
+          <label><input type="checkbox" name="musicPreferences" value="punk"> Punk</label>
+          <label><input type="checkbox" name="musicPreferences" value="alternative"> Alternativa</label>
+          <label><input type="checkbox" name="musicPreferences" value="r-n-b"> R&B</label>
+          <!-- Add more genres here -->
+        </div>
+      </div>
+      <button onclick="register()">Registrarse</button>
+      <p>¿Ya tienes una cuenta? <a href="#" onclick="showLogin()">Iniciar sesión</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
