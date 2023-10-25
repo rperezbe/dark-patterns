@@ -2,6 +2,7 @@ Por el momento llevamos los siguientes:
 obligado a aceptar las cookies --> Activación forzosa
 no se ve para cancelar cookies --> Hidden information
 Solo se puede eliminar la cuenta con postman --> Roach motel
+Confirmshaming
 En desarrollo:
 Zuckering
 Pre-ticked checkboxes
