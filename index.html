@@ -33,6 +33,17 @@
       <input type="password" id="new-password" placeholder="Contraseña">
       <input type="text" id="email" placeholder="Correo electrónico"> <!-- Nuevo campo: Correo electrónico -->
       <input type="text" id="age" placeholder="Edad"> <!-- Nuevo campo: Edad -->
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" id="numero-tarjeta" name="numero-tarjeta" placeholder="Número de Tarjeta" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="ccv" name="ccv" placeholder="CCV" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="fecha-vencimiento" name="fecha-vencimiento" placeholder="MM/YY" required>
+        </div>
+      </div>
       <p>Preferencias musicales:</p>
       <div class="checkbox-columns">
         <div>
@@ -64,6 +75,9 @@
           <!-- Add more genres here -->
         </div>
       </div>
+      <div>
+      <input type="checkbox" id="consentimiento" name="consentimiento" value="aceptado" checked>
+      <label for="consentimiento">Acepto recibir correos publicitarios y spam</label></div>
       <button onclick="register()">Registrarse</button>
       <p>¿Ya tienes una cuenta? <a href="#" onclick="showLogin()">Iniciar sesión</a></p>
     </div>
