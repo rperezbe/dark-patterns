@@ -24,3 +24,10 @@ enlaceConfirmShaming.addEventListener('click', function (event) {
   event.preventDefault(); // Evita que el enlace redireccione a una nueva página
   confirmShaming.style.display='none';
 });
+function login() {
+  window.location.href = 'main.html';
+}
+
+function register() {
+  window.location.href = 'main.html';
+}
